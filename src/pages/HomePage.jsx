@@ -20,6 +20,9 @@ import checkmark from "../assets/images/icons/checkmark.png"
 const HomePage = () => {
   return (
     <>
+
+      <title>Ecommerce website</title>
+
       <div className="header">
         <div className="left-section">
           <a href='#' className='header-link'>
