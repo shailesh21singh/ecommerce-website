@@ -1,12 +1,6 @@
 import React from 'react'
-import './checkout-header.css'
+import CheckoutHeader from "./CheckoutHeader"
 import './checkout.css'
-
-import logo from "../assets/images/logo.png"
-import mobilelogo from "../assets/images/mobile-logo.png"
-import checkoutLockIcon from "../assets/images/icons/checkout-lock-icon.png"
-import athleticCottonSocks6Pairs from '../assets/images/products/athletic-cotton-socks-6-pairs.jpg'
-import intermediateCompositeBasketball from '../assets/images/products/intermediate-composite-basketball.jpg'
 
 
 function CartPage() {
@@ -14,25 +8,8 @@ function CartPage() {
     <>
       <title>Checkout page</title>
 
-      <div className="checkout-header">
-        <div className="header-content">
-          <div className="checkout-header-left-section">
-            <a href="index.html">
-              <img className="logo" src={logo} />
-              <img className="mobile-logo" src={mobilelogo} />
-            </a>
-          </div>
-
-          <div className="checkout-header-middle-section">
-            Checkout (<a class="return-to-home-link"
-            href="index.html">3 items</a>)
-          </div>
-
-          <div className="checkout-header-right-section">
-            <img src={checkoutLockIcon} />
-          </div>
-        </div>
-      </div>
+      <CheckoutHeader />
+      <link rel="icon" type="image/svg+xml" href="cart-favicon.png" />
 
 
 
@@ -49,7 +26,7 @@ function CartPage() {
 
               <div className="cart-item-details-grid">
                 <img className="product-image"
-                src={athleticCottonSocks6Pairs} />
+                src={"images/products/athletic-cotton-socks-6-pairs.jpg"} />
 
                 <div className="cart-item-details">
                   <div className="product-name">
@@ -94,7 +71,7 @@ function CartPage() {
                 <div className="delivery-option">
                   <input 
                     type="radio"
-                    class="delivery-option-input"
+                    className="delivery-option-input"
                     name="delivery-option-1" 
                   />
                   <div>
@@ -109,7 +86,7 @@ function CartPage() {
                 <div className="delivery-option">
                   <input 
                     type="radio"
-                    class="delivery-option-input"
+                    className="delivery-option-input"
                     name="delivery-option-1" 
                   />
                   <div>
@@ -132,7 +109,7 @@ function CartPage() {
 
             <div className="cart-item-details-grid">
               <img className="product-image"
-                src={intermediateCompositeBasketball} />
+                src={"images/products/intermediate-composite-basketball.jpg"} />
 
               <div className="cart-item-details">
                 <div className="product-name">
@@ -178,7 +155,7 @@ function CartPage() {
                   <input 
                     type="radio" 
                     checked 
-                    class="delivery-option-input"
+                    className="delivery-option-input"
                     name="delivery-option-2" 
                   />
                   <div>
@@ -193,7 +170,7 @@ function CartPage() {
                 <div className="delivery-option">
                   <input 
                     type="radio" 
-                    class="delivery-option-input"
+                    className="delivery-option-input"
                     name="delivery-option-2" 
                   />
                   <div>
